@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.edu.unipampa.scpapp">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icone_scp_app"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icone_scp_app"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Controller.ProcessoActivity"
+            android:label="Processo"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".MainActivity"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name=".Controller.AndamentoActivity"
+            android:label="Andamentos"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".Controller.ProcessoActivity"
+            android:launchMode="singleTop"
+            />
+
+        <activity
+            android:name=".Controller.DetalheAndamentoActivity"
+            android:label="Detalhes Do Andamento"
+            android:parentActivityName=".Controller.AndamentoActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+    </application>
+
+</manifest>

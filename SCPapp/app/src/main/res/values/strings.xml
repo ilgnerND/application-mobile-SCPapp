@@ -1,0 +1,14 @@
+<resources>
+    <!--Formatação TextView Tela Consulta Processo-->
+    <string name="app_name">SCPapp</string>
+    <string name="cpf">CPF :</string>
+    <string name="processo">Nº Do Processo :</string>
+    <string name="bt_pesquisar">Pesquisar</string>
+    <string name="ButtonDB">TesteDB</string>
+    <string name="title_ocorrenciadetalhe_list">Items</string>
+    <string name="title_ocorrenciadetalhe_detail">OcorrenciaDetalhe Detail</string>
+    <string name="facebook_app_id">1974183529476590</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="send_to">SCP-App</string>
+</resources>
